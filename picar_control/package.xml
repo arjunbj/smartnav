@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>picar_control</name>
+  <version>1.0.0</version>
+  <description>Control a picar using keyboard</description>
+
+  <maintainer email="vegnesh@gmail.com">Vegnesh</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://wiki.ros.org/teleop_twist_keyboard</url>
+
+  <author>Vegnesh</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>rospy</run_depend>
+</package>
