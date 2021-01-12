@@ -111,7 +111,7 @@ if __name__=="__main__":
     rospy.init_node('keyboard_publisher')
     rate = rospy.Rate(2)
     repeat = rospy.get_param("~repeat_rate", 0.0)
-    key_timeout = rospy.get_param("~key_timeout", 0.0)
+    key_timeout = rospy.get_param("~key_timeout", 0.5)
     if key_timeout == 0.0:
         key_timeout = None
 
@@ -124,13 +124,13 @@ if __name__=="__main__":
         print(msg)
         while(1):
             key = getKey(key_timeout)
+            
             print(key)
             if (key == '\x03'):
                 break
             else:
-
-               pub_thread.update(key)
-
+                pub_thread.update(key)
+               
     except Exception as e:
         print(e)
 
