@@ -1,7 +1,7 @@
 # Smartnav
 Objective: Make an autonomous RC car to autonomously explore the environment and make a map of the environment
 
-Dependencies:  
+## Dependencies:  
 Install below dependencies before building this branch
 
 export TURTLEBOT3_MODEL=burger  
@@ -12,7 +12,7 @@ sudo apt-get install libsdl-dev
 sudo apt-get install libsdl-image1.2-dev  
 sudo apt install ros-noetic-slam-gmapping  
 
-How to launch:  
+## How to launch:  
 
 roslaunch turtlebot3_gazebo turtlebot3_world.launch  
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping  
